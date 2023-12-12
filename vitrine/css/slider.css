@@ -1,0 +1,113 @@
+/* body {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+
+  } */
+
+  /* ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  } */
+
+
+  /* Conteneur du Carrousel : 
+    + 100% de la page 
+    + masquer les débordements */
+  .wrapper{
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+  }
+
+  /* + Contexte de formatage permettant aux enfants de se positionner les uns à côté des autres 
+     + transition
+     + animation */
+  .galerie {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: all .5s;
+    animation: sliderCss 10s ease-in-out alternate infinite;
+
+  }
+
+  /* Dimensionner chaque slide  */
+  .galerie__item{
+    flex: 0 0 auto; /* auto fait référence au width de l'élément*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .galerie__item:nth-child(1){
+    /* background-color: cadetblue; */
+  }
+  .galerie__item:nth-child(2){
+    /* background-color: rgb(59, 150, 97); */
+  }
+  .galerie__item:nth-child(3){
+    /* background-color: rgb(112, 95, 160); */
+  }
+  .galerie__item:nth-child(4){
+    /* background-color: rgb(160, 95, 145); */
+  }
+
+  /* Ici 4 images :
+   1/2t – 1t – 1t – 1/2t
+   */
+
+  @keyframes sliderCss {
+  0% {
+    transform: translateX(0);
+  }
+  33.3% {
+    transform: translateX(-100%);
+  }
+  69.6% {
+    transform: translateX(-200%);
+  }
+  100%{
+    transform: translateX(-300%);
+  };
+}
+
+
+.promPict {
+  width: 22rem;
+}
+
+.promRad {
+  border-radius: .5rem .5rem 0 0;
+}
+
+.card-slider-flex {
+  flex-direction: column;
+}
+
+.card-slider-padding {
+  padding: .5rem;
+}
+
+@media (min-width: 40rem) {
+
+  .card-slider-flex {
+    flex-direction: row;
+  }
+
+  .card-slider-padding {
+    padding: 3rem;
+  }
+
+  .promRad {
+    border-radius: .5rem 0 0 .5rem;
+  }
+
+}

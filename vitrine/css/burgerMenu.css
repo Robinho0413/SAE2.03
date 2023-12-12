@@ -1,0 +1,148 @@
+/* Menu Burger Header */
+
+.header {
+    position: fixed;
+    z-index: 1;
+}
+
+.header__menu {
+    z-index: 1;
+}
+
+.header__logo {
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.header__search {
+    margin: 0 2rem;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+}
+
+.header__label{
+    position: relative;
+    z-index: 10;
+}
+
+.burger__line {
+    transform-origin: center center;
+}
+.burger__line:nth-child(1){
+    transition: y .3s .5s, rotate .4s 0s;
+}
+
+.burger__line:nth-child(3){
+    transition: y .3s .5s, rotate .4s 0s;
+}
+
+.burger__line:nth-child(2){
+    opacity: 1;
+    transition: opacity .3s 1.2s;
+}
+
+/* .header__label:hover .burger__line:nth-child(1){
+    fill: var(--color-green-100);
+}
+
+.header__label:hover .burger__line:nth-child(3){
+    fill: var(--color-green-100);
+}
+
+.header__label:hover .burger__line:nth-child(2){
+    fill: var(--color-green-100);
+} */
+
+input[type="checkbox"]:checked ~ label .burger__line:nth-child(1){
+    y: 15px;
+    rotate: 45deg;
+    transition-delay: 0s, .5s;
+}
+
+input[type="checkbox"]:checked ~ label .burger__line:nth-child(3){
+    y: 15px;
+    rotate: -45deg;
+    transition-delay: 0s, .5s;
+
+}
+
+input[type="checkbox"]:checked ~ label .burger__line:nth-child(2){
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.header__nav{
+    position:fixed;
+    inset: 0 60% 0 0;
+    translate: -100% 0;
+    transition: translate .4s .5s;
+}
+
+input[type="checkbox"]:checked ~ .header__nav{
+    translate: 0
+}
+
+.header__nav-home:hover {
+    color: var(--color-yellow);
+}
+
+.header__nav-category {
+    appearance: none;
+    text-align: center;
+}
+
+.header__nav-category:hover {
+    color: var(--color-yellow);
+}
+
+.header__nav-category:focus {
+    outline: none;
+}
+
+.header__nav-profile {
+    appearance: none;
+    text-align: center;
+}
+
+.header__nav-profile:hover {
+    color: var(--color-yellow);
+}
+
+.header__nav-profile:focus {
+    outline: none;
+}
+
+
+.header__nav-playlist {
+}
+
+.header__nav-playlist:hover {
+    color: var(--color-yellow);
+}
+
+
+@media (min-width: 62rem) {
+    .header__label {
+      display: none;
+    }
+
+    .header__logo {
+        margin-right: auto;
+        margin-left: 15rem;
+    }
+  
+    .header__nav {
+      position: static;
+      translate: 0;
+      transition: all 0.3s ease-in-out;
+      margin-right: 2rem;
+    }
+  
+    .header__nav-list {
+      flex-direction: row;
+    }
+}
+
+

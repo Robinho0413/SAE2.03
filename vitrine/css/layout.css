@@ -1,0 +1,55 @@
+.df {
+    display: flex;
+}
+
+.dif {
+    display: inline-flex;
+}
+
+.dg {
+    display: grid;
+}
+
+.cx {
+    justify-content: center;
+}
+
+.cy {
+    align-items: center;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.fd-r {
+    flex-direction: row;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.se {
+    justify-content: space-evenly;
+}
+
+.df-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.df-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.df-cr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

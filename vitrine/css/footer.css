@@ -1,0 +1,21 @@
+.footer {
+    padding: 2rem;
+}
+
+.footer__social-as {
+    height: 2rem;
+}
+
+.footer__social-gp {
+    height: 2rem;
+}
+
+@media (min-width: 62rem) {
+    .footer__terms {
+        flex-direction: row;
+    }
+
+    .footer__social {
+        flex-direction: row;
+    }
+}

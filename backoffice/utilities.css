@@ -1,0 +1,136 @@
+
+
+/* Font family */
+
+.ff-i {
+    font-family: var(--ff-inter);
+}
+
+.ff-p {
+    font-family: var(--ff-play);
+}
+
+
+/* Font wheigt */
+
+.fw-300 {
+    font-weight: var(--fw-300);
+}
+
+
+/* Font size */
+
+.fs-80 {
+    font-size: var(--fs-80);
+}
+
+.fs-72 {
+    font-size: var(--fs-72);
+}
+
+.fs-64 {
+    font-size: var(--fs-64);
+}
+
+.fs-56 {
+    font-size: var(--fs-56);
+}
+
+.fs-48 {
+    font-size: var(--fs-48);
+}
+
+.fs-40 {
+    font-size: var(--fs-40);
+}
+
+.fs-32 {
+    font-size: var(--fs-32);
+}
+
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+/* Color */
+
+.clr-w {
+    color: var(--color-white);
+}
+
+.clr-b {
+    color: var(--color-black);
+}
+
+.clr-g900 {
+    color: var(--color-green-900);
+}
+
+.clr-g500 {
+    color: var(--color-green-500);
+}
+
+.clr-g300 {
+    color: var(--color-green-300);
+}
+
+.clr-g100 {
+    color: var(--color-green-100);
+}
+
+.clr-y {
+    color: var(--color-yellow);;
+}
+
+.clr-dg {
+    color: var(--color-darkGrey);
+}
+
+
+
+
+.fill-w {
+    fill: white;
+}
+
+
+.bg-clr-b {
+    background-color: var(--color-black);
+}
+
+.bg-clr-w {
+    background-color: var(--color-white);
+}
+
+.bg-clr-g900 {
+    background-color: var(--color-green-900);
+}
+
+.bg-clr-g800 {
+    background-color: var(--color-green-800);
+}
+
+.bg-clr-g500 {
+    background-color: var(--color-green-500);
+}
+
+.bg-clr-g300 {
+    background-color: var(--color-green-300);
+}
+
+.bg-clr-g100 {
+    background-color: var(--color-green-100);
+}
+
+.bg-clr-dg {
+    background-color: var(--color-darkGrey);
+}
+
+.bg-clr-vdg {
+    background-color: var(--color-veryDarkGrey);
+}
+
+.bg-clr-y {
+    background-color: var(--color-yellow);
+}
+

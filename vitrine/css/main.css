@@ -1,0 +1,14 @@
+@import "reset.css";
+@import "var.css";
+@import "utilities.css";
+@import "layout.css";
+@import "burgerMenu.css";
+@import "slider.css";
+@import "cardMovie.css";
+@import "trailer.css";
+@import "footer.css";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+

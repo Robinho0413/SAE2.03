@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Back Office</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body class="bg-clr-dg">
+
+        <section class="backoffice ff-p clr-w">
+
+            <nav class="backoffice__nav"> 
+                <h1 class="backoffice__nav-title fs-64 clr-y">BACK OFFICE</h1>
+                <h2 class="backoffice__nav-subtitle fs-48">Films</h2>
+            </nav>
+            
+            <div class="backoffice__content">
+                <form class="backoffice__addMovie" method='GET' action="../server/script.php">
+                   
+                    <h3 class="backoffice__addMovie-title fs-32">Ajouter un film</h3>
+    
+    
+                    <input type="text" name="titre" placeholder="Saisir le titre">
+                    <input type="text" name="realisateur" placeholder="Saisir le realisateur">
+                    <input type="text" name="annee_sortie" placeholder="Saisir l'annee de sortie">
+                    <input type="text" name="url_affiche" placeholder="Saisir l'url de l'affiche">
+                    <input type="text" name="url_trailer" placeholder="Saisir l'url du trailer">
+
+                    <h2 class="backoffice__addMovie-cat fs-16">Sélectionner une catégorie</h2>
+    
+                    <select name="id_category" id="category__container" placeholder="Categorie">
+                        
+                    </select>
+                    
+                    <input class="btn-input" type="submit" value="addmovie" name="action">
+    
+                </form>
+    
+                <div class="backoffice__profile">
+    
+                    <form class="backoffice__profile-add" method='GET' action="../server/script.php">
+        
+                        <h3 class="backoffice__profileAdd-title fs-32">Ajouter un profil</h3>
+        
+                        <input type="text" name="name_profile" placeholder="Nom du profil">
+        
+                        <input class="btn-input" type="submit" value="addprofile" name="action">
+        
+                    </form>
+        
+                    <form class="backoffice__profile-del" method='GET' action="../server/script.php">
+        
+                        <h3 class="backoffice__profileDel-title fs-32">Supprimer un profil</h3>
+        
+                        <select name="id_profile" id="profile__container" placeholder="Profil">
+                            
+                        </select>
+                        
+                        <input class="btn-input" type="submit" value="deleteprofile" name="action">
+        
+                    </form>
+
+                    <form class="backoffice__promotion-add" method='GET' action="../server/script.php">
+        
+                        <h3 class="backoffice__promotionAdd-title fs-32">Promouvoir un film</h3>
+        
+                        <select name="promotion" id="promotion__container" placeholder="Promotion">
+                            
+                        </select>
+                        
+                        <input class="btn-input" type="submit" value="addpromotion" name="action">
+        
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+        <template class="movie-category-template">
+            <option value="{{id_category}}">{{name_category}}</option>
+        </template>
+
+        <template class="profile-template">
+            <option value="{{id_profile}}">{{name_profile}}</option>
+        </template>
+
+        <template class="movies-promotion-template">
+            <option value="{{id_film}}">{{titre}}</option>
+        </template>
+
+    </body>
+
+    <script src="script.js"></script>
+</html>

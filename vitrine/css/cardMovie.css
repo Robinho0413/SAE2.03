@@ -1,0 +1,37 @@
+#movies {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.card__movie {
+    transition: .5s;
+}
+
+.card__movie:hover {
+    transform: scale(1.02);
+}
+
+.card__movie-affiche {
+    height: 30rem;
+    object-fit: cover;
+}
+
+.movie__addtoplaylist-btn {
+    border: 1px solid var(--color-yellow);
+    border-radius: .4rem;
+}
+
+.movie__addtoplaylist-btn:hover {
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+}
+
+.movie__removefromplaylist-btn {
+    border: 1px solid var(--color-yellow);
+    border-radius: .4rem;
+}
+
+.movie__removefromplaylist-btn:hover {
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+}
+
